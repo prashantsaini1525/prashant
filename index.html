@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="png" href="images/logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prashant Saini Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/e4acf8f52e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <a href="#">Prashant.</a>
+            </div>
+            <ul id="sidemenu">
+                <li><a href="#header" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer / Full Stack Developer</p>
+            <h1>Hello, I'm <span>Prashant</span><br> Saini</h1>
+            <a href="Documents/Prashant_Saini_Resume.pdf" download class="btn-btn1">Download Resume</a>
+        </div>
+    </div>
+</div>
+
+<!-------------------------------------------------------About me--------------------------------------------------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, I'm Prashant Saini, a recent graduate with a passion for software development. With a solid foundation in 
+                programming languages and technologies such as HTML, CSS, JavaScript, and Node.js, I am eager to apply my knowledge
+                to real-world projects. I have developed an education website during my academic journey, which helped me gain 
+                hands-on experience in front-end and back-end development.
+                <br><br>I am excited to start my career as a Software developer, where I can contribute to innovative projects and 
+                grow my skills in the tech industry. I am always eager to learn and adapt to new technologies, and I look forward to
+                making a meaningful impact as part of a dynamic team.    
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Java, JavaScript</span><br>Programming Language</li>
+                        <li><span>HTML, CSS, EJS</span><br>Markup & Styling & Web Technologies</li>
+                        <li><span>Node.js & Java</span><br>Backend Development</li>
+                        <li><span>MongoDB, SQL</span><br>Database Management</li>
+                        <li><span>Visual Studio Code, Google Colaboratory, Git & GitHub, Power BI</span><br>Development Tools</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Fresher</span><br>Software Development / Web Development</li>
+                        <li><span>08/2023 - 11/2023</span><br>Data Analytics Consulting Virtual Internship at KPMG</li>
+                        <li><span>06/2023 - 07/2023</span><br>Data Analytics and Visualization Job Simulation at Accenture</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020 - 2024</span><br>B.Tech From Dr. A.P.J Abdul Kalam Technical University in Lucknow, U.P</li>
+                        <li><span>2019 - 2020</span><br>Pre-University Course From Board of High School and Intermediate Education Uttar Pradesh</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------------------------------------------------------------------------Services----------------------------------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Software Development</h2>
+                <p>We offer software development services to create custom applications tailored to your needs. Our team uses modern technologies to
+                build reliable, user-friendly software that enhances productivity and efficiency. From planning and design to development and support, 
+                we ensure a smooth process and high-quality results for your business.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-slack"></i>
+                <h2>Web Design</h2>
+                <p>We provide full-stack web development services using modern frontend technologies like HTML, CSS, JavaScript, and frameworks such as 
+                React.js and Vue.js for creating interactive, responsive designs.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Web App Design</h2>
+                <p>We design intuitive, responsive web applications using modern technologies like HTML5, CSS3, React.js, and Vue.js. Our focus is on
+                creating user-friendly, high-performance, and scalable apps that work seamlessly across all devices.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------------------------------------------portfolio--------------------------------------------------------------------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Latest Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/MyLibrary.jpg">
+                <div class="layer">
+                    <h3>MyLibrary</h3>
+                    <p>Built a web application for managing books and authors in a library management system.</p>
+                    <a href="https://github.com/prashantsaini1525/MyLibrary" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/I Tech World.jpg">
+                <div class="layer">
+                    <h3>I Tech World</h3>
+                    <p>This is an educational website called "I Tech World" offering courses, tutorials, and resources for students, 
+                        including popular subjects like Cyber Security, JEE Preparation, and GATE. It includes sections like Courses, 
+                        About, Portfolio, Founder, and Services with interactive features like a side menu, a search bar, and student reviews.
+                        </p>
+                    <a href="https://i-tech-gamma.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Heart.jpg">
+                <div class="layer">
+                    <h3>Heart Disease prediction</h3>
+                    <p>Developed a machine learning model to predict the likelihood 
+                        of heart disease using a dataset from Kaggle.</p>
+                    <a href="https://github.com/prashantsaini1525/Heart-Disease-Predicition" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/prashantsaini1525" target="_blank" class="btn">See more</a>
+    </div>
+</div>
+
+<!-----------------------------------------------Contact------------------------------------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> Prashant.saini.org@gmail.com </p>
+                <p><i class="fa-solid fa-phone"></i> +91 - 9557745536 </p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/prashant.saini.31508076/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="instagram.com/prashant_saini_1525" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/Prashan58889893" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/prashantssaini/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/prashantsaini1525/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://leetcode.com/u/prashantsainii/" target="_blank"><i class="fa-solid fa-code"></i></a>
+                </div>
+                <a href="Documents/Prashant_Saini_Resume.pdf" download class="btn-btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id= "msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 By Prashant <i class="fa-solid fa-heart"></i> | All Rights Reserved.</p>
+    </div>
+</div>
+
+<!-------------------------------------------------------------------top to scroll----------------------------------------------->
+<div class="gotopbtn">
+    <a href="#"> <i class="fa-solid fa-arrow-up"></i></a>
+</div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwjut6nOHp4Z2Spb2w89LrDFoEzynLHtfP44jo0iajMFHkPH-byjzoNp2smPRcO0SeljQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Thank you For Contact Us!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+<script src="./script.js" defer></script>
+</body>
+</html>
